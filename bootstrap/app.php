@@ -1,7 +1,6 @@
 <?php
 
 require_once __DIR__.'/../vendor/autoload.php';
-
 Dotenv::load(__DIR__.'/../');
 
 /*
@@ -53,13 +52,13 @@ $app->singleton(
 |
 */
 
-// $app->middleware([
-//     // 'Illuminate\Cookie\Middleware\EncryptCookies',
-//     // 'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
-//     // 'Illuminate\Session\Middleware\StartSession',
-//     // 'Illuminate\View\Middleware\ShareErrorsFromSession',
-//     // 'Laravel\Lumen\Http\Middleware\VerifyCsrfToken',
-// ]);
+ $app->middleware([
+      'Illuminate\Cookie\Middleware\EncryptCookies',
+      'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
+      'Illuminate\Session\Middleware\StartSession',
+      'Illuminate\View\Middleware\ShareErrorsFromSession',
+      'Laravel\Lumen\Http\Middleware\VerifyCsrfToken',
+ ]);
 
 // $app->routeMiddleware([
 
@@ -76,7 +75,7 @@ $app->singleton(
 |
 */
 
-// $app->register('App\Providers\AppServiceProvider');
+$app->register('App\Providers\AppServiceProvider');
 
 /*
 |--------------------------------------------------------------------------

@@ -1,0 +1,96 @@
+.dropdown:hover .dropdown-menu,
+.dropup:hover .dropdown-menu {
+  display: block;
+}
+.navbar {
+  background-color: #4ecab8;
+  border-radius: 0px;
+  border: none;
+  font-size: 15px;
+}
+.navbar .navbar-nav li > a {
+  color: #F2F2F2;
+}
+.navbar .navbar-nav li > a:hover {
+  font-weight: 600;
+  color: #F2F2F2;
+}
+.navbar .navbar-nav .dropdown-menu {
+  min-width: 260px;
+  padding: 7px 0;
+  background-color: #F9F9F9;
+  border: 2px solid #C2C2C2;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+.navbar .navbar-nav .dropdown-menu .divider {
+  margin: 5px 0;
+}
+.navbar .navbar-nav .dropdown-menu > li > a {
+  overflow: hidden;
+  padding: 7px 20px;
+  font-weight: 300;
+  color: #949494;
+}
+.navbar .navbar-nav .dropdown-menu > li > a.create-new {
+  font-weight: 400;
+}
+.navbar .navbar-nav .dropdown-menu > li > a.create-new .group-icon {
+  background-color: #D8D8D8;
+  text-align: center;
+  line-height: 42px;
+  font-size: 20px;
+}
+.navbar .navbar-nav .dropdown-menu > li > a.create-new:hover {
+  font-weight: 400;
+}
+.navbar .navbar-nav .dropdown-menu > li > a:hover {
+  font-weight: 300;
+  color: #949494;
+  background-color: #F1F1F1;
+}
+.navbar .navbar-nav .dropdown-menu > li > a .group-icon {
+  float: left;
+  height: 40px;
+  width: 40px;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+.navbar .navbar-nav .dropdown-menu > li > a .team-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.navbar .navbar-nav .dropdown-menu > li > a .menu-label {
+  line-height: 40px;
+}
+.navbar .navbar-nav .avatar {
+  border: 1px solid #F2F2F2;
+  margin: 5px;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+}
+.feed .item {
+  background-color: #F1F1F1;
+  padding: 15px;
+  margin: 15px -15px;
+}
+.feed .item .content {
+  float: left;
+  margin: 0px 15px;
+}
+.feed .item .content .excerpt {
+  color: #949494;
+  font-weight: 300;
+}
+.feed .item .content .creator {
+  color: #67707A;
+}
+.feed .item .avatar img {
+  float: left;
+  border-radius: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F9F9F9;
+}

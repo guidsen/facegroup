@@ -11,6 +11,11 @@
 |
 */
 
-$app->get('/', function() use ($app) {
-    return view('index');
+$app->group(['namespace' => 'App\Http\Controllers'], function ($group) {
+    $group->get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
+    $group->get('auth', ['as' => 'auth', 'uses' => 'HomeController@auth']);
+    $group->get('logout', ['as' => 'logout', 'uses' => 'HomeController@logout']);
+
+    $group->get('group/{id}', ['as' => 'group.show', 'uses' => 'GroupController@show']);
+    $group->get('message/{id}', ['as' => 'message.show', 'uses' => 'MessageController@show']);
 });
