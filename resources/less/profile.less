@@ -1,0 +1,32 @@
+.profile {
+  color: #888;
+  font-size: 18px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  .from{
+    float: left;
+    img{
+      .img(50px);
+    }
+    .posted-by{
+      font-weight: 300;
+    }
+    .name{
+      font-weight: 600;
+    }
+  }
+  .when{
+    font-weight: 300;
+    float: right;
+  }
+
+  &.small{
+    font-size: 16px;
+    margin-bottom: 25px;
+    .from{
+      img{
+        .img(35px);
+      }
+    }
+  }
+}
