@@ -6617,97 +6617,151 @@ button.close {
   height: 40px;
   width: 40px;
 }
-.group-title {
+.group-feed-container .group-title {
   font-size: 20px;
   text-align: center;
   color: #888;
   margin-bottom: 50px;
   margin-left: 163px;
 }
-.group-title .btn {
+.group-feed-container .group-title .btn {
   padding: 10px 25px;
   border: none;
 }
-.feed .item {
+.group-feed-container .feed .item {
   background-color: #f6f6f6;
   padding: 15px;
   margin: 0px 0px 30px 0px;
   box-shadow: rgba(148, 148, 148, 0.3) 0px 2px 1px;
   border-radius: 3px;
 }
-.feed .item .profile {
+.group-feed-container .feed .item .profile {
   line-height: 60px;
   font-size: 18px;
   margin-bottom: 20px;
 }
-.feed .item .profile .date {
+.group-feed-container .feed .item .profile .date {
   float: right !important;
   font-size: 13px;
 }
-.feed .item .profile .date i {
+.group-feed-container .feed .item .profile .date i {
   color: #f39c12;
   font-size: 20px;
   margin-right: 10px;
   position: relative;
   top: 2px;
 }
-.feed .item .profile .avatar {
+.group-feed-container .feed .item .profile .avatar {
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-right: 20px;
 }
-.feed .item .social {
+.group-feed-container .feed .item .social {
   margin: 30px 0 15px 0;
   font-size: 12px;
 }
-.feed .item .social i {
+.group-feed-container .feed .item .social i {
   font-size: 30px;
   margin-right: 15px;
   position: relative;
   top: 5px;
 }
-.feed .item .social i:last-of-type {
+.group-feed-container .feed .item .social i:last-of-type {
   margin-right: 25px;
 }
-.feed .item .social i.like {
+.group-feed-container .feed .item .social i.like {
   color: #5ea7e4;
 }
-.feed .item .social i.favorite {
+.group-feed-container .feed .item .social i.favorite {
   color: #ffd23e;
 }
-.feed .item .social .total {
+.group-feed-container .feed .item .social .total {
   color: #888;
   margin-right: 30px;
   line-height: 32px;
 }
-.feed .item .social a {
+.group-feed-container .feed .item .social a {
   margin-right: 30px;
   color: #67707A;
   font-weight: 600;
 }
-.feed .item .comments {
+.group-feed-container .feed .item .comments {
   margin: 0 -15px;
   padding: 0px 15px;
   border-top: 1px solid #ddd;
 }
-.feed .item .comments .comment {
+.group-feed-container .feed .item .comments .comment {
   overflow: hidden;
   font-size: 13px;
   color: #67707A;
   margin: 10px 0px;
 }
-.feed .item .comments .comment:last-of-type {
+.group-feed-container .feed .item .comments .comment:last-of-type {
   margin-bottom: -5px;
 }
-.feed .item .comments .comment .avatar-sm {
+.group-feed-container .feed .item .comments .comment .avatar-sm {
   float: left;
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
-.feed .item .comments .comment .message {
+.group-feed-container .feed .item .comments .comment .message {
   padding: 10px 20px 10px 55px;
+}
+.message-container .post {
+  margin-bottom: 50px;
+}
+.message-container .post .message {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.message-container .post .social {
+  font-size: 16px;
+  color: #888;
+  font-weight: 400;
+}
+.message-container .post .social button {
+  background-color: #76dfd0;
+  color: #fff;
+  border: none;
+  padding: 15px 10px;
+  margin: 10px 15px 10px 0;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #4ecab8;
+}
+.message-container .post .social *::-webkit-input-placeholder {
+  color: #fff;
+}
+.message-container .post .social .comment {
+  width: 100%;
+  background-color: #76dfd0;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 15px 0 0 0;
+  color: #fff;
+  height: 43px;
+  -webkit-transition: height 0.5s;
+  resize: vertical;
+}
+.message-container .post .social .comment:focus {
+  outline: none;
+  height: 150px;
+}
+.message-container .comment {
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  color: #888;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.message-container .comment:not(:last-of-type) {
+  margin: 0 0 15px 0;
+}
+.message-container .comment .content {
+  font-weight: 300;
 }
 body {
   font-family: 'Open Sans', sans-serif;

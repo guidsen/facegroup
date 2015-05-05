@@ -1,11 +1,13 @@
 @extends('template')
 
-@section('content')
+@section('container-class', 'message-container')
 
+@section('content')
     <div class="post">
         <div class="profile">
             <div class="from">
-                <img src="http://placehold.it/50x50"> <span class="posted-by">Posted by</span> <span class="name">{{$message->getProperty('from')->getProperty('name')}}</span>
+                <img src="http://placehold.it/50x50"> <span class="posted-by">Posted by</span>
+                <span class="name">{{$message->getProperty('from')->getProperty('name')}}</span>
             </div>
             <div class="when">
                 9 hours ago
@@ -15,8 +17,9 @@
             {{$message->getProperty('message')}}
         </div>
         <div class="social">
-            This post has 8 comments and {{$message->likesCount}} likes<br />
-            <button><i class="fa fa-thumbs-up"></i> Comment</button><button><i class="fa fa-thumbs-up"></i> Like</button>
+            This post has 8 comments and {{$message->likesCount}} likes<br/>
+            <button><i class="fa fa-thumbs-up"></i> Comment</button>
+            <button><i class="fa fa-thumbs-up"></i> Like</button>
             <textarea name="comment" class="comment" spellcheck="false">Write a comment...</textarea>
         </div>
     </div>
@@ -25,7 +28,8 @@
         <div class="comment">
             <div class="profile small">
                 <div class="from">
-                    <img src="http://placehold.it/50x50"> <span class="posted-by">Posted by</span> <span class="name">{{$message->getProperty('from')->getProperty('name')}}</span>
+                    <img src="http://placehold.it/50x50"> <span class="posted-by">Posted by</span>
+                    <span class="name">{{$message->getProperty('from')->getProperty('name')}}</span>
                 </div>
                 <div class="when">
                     9 hours ago
@@ -37,5 +41,4 @@
             Likes: {{$comment->getProperty('like_count')}}
         </div>
     @endforeach
-
 @stop

@@ -1,5 +1,7 @@
 @extends('template')
 
+@section('container-class', 'group-feed-container')
+
 @section('content')
     <div class="group-title">
         54 total posts in <strong>Young Creators</strong>
@@ -25,6 +27,7 @@
                 <div class="comments">
                     <div class="comment">
                         <img class="avatar-sm" src="http://placehold.it/50x50">
+
                         <div class="message">
                             <strong>Guido Schmitz said:</strong>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis turpis a
@@ -33,6 +36,7 @@
                     </div>
                     <div class="comment">
                         <img class="avatar-sm" src="http://placehold.it/50x50">
+
                         <div class="message">
                             <strong>Jane Doe said:</strong>
                             Lorem
