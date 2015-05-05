@@ -71,31 +71,85 @@
   height: 40px;
   width: 40px;
 }
+.group {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: #888;
+  overflow: hidden;
+  line-height: 53px;
+}
+.group .name {
+  font-weight: 600;
+}
+.add {
+  margin: -53px 0 103px 0;
+}
+.add button {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  float: right;
+  padding: 15px 10px;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #d18c1f;
+  margin-bottom: 3px;
+}
 .feed .item {
   background-color: #F1F1F1;
   padding: 15px;
   margin: 15px -15px;
 }
 .feed .item .content {
-  float: left;
-  margin: 0px 15px;
+  margin: 0 15px;
+  font-weight: 300;
+  color: #888;
 }
-.feed .item .content .excerpt {
-  color: #949494;
+.feed .item .social {
+  margin: 45px 0 15px 0;
+  line-height: 40px;
   font-weight: 300;
 }
-.feed .item .content .creator {
-  color: #67707A;
+.feed .item .social i {
+  font-size: 32px;
+  margin-right: 30px;
+  position: relative;
+  top: 5px;
 }
-.feed .item .avatar img {
-  float: left;
-  border-radius: 100%;
+.feed .item .social i.like {
+  color: #5ea7e4;
+}
+.feed .item .social i.favorite {
+  color: #ffd23e;
+}
+.feed .item .social .total {
+  color: #888;
+  margin-right: 30px;
+  line-height: 32px;
+}
+.feed .item .social a {
+  margin-right: 30px;
+  color: #333;
+  font-weight: 600;
+}
+.feed .item .comments {
+  margin: 0 -15px;
+  padding: 15px 15px 0 15px;
+  border-top: 1px solid #ddd;
+}
+.feed .item .comments .comment {
+  padding: 0;
+}
+.feed .item .comments .profile.small {
+  font-size: 14px!important;
+  margin: 0;
 }
 .profile {
   color: #888;
   font-size: 18px;
   overflow: hidden;
   margin-bottom: 50px;
+  font-weight: 300;
 }
 .profile .from {
   float: left;
@@ -106,14 +160,10 @@
   border-radius: 25px;
   margin-right: 25px;
 }
-.profile .from .posted-by {
-  font-weight: 300;
-}
 .profile .from .name {
   font-weight: 600;
 }
 .profile .when {
-  font-weight: 300;
   float: right;
 }
 .profile.small {
@@ -171,9 +221,14 @@
   background-color: #f0f0f0;
   padding: 30px 20px;
   color: #888;
-  margin: 0 0 15px 0;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 14px;
+}
+.comment:not(:last-of-type) {
+  margin: 0 0 15px 0;
+}
+.comment .content {
+  font-weight: 300;
 }
 body {
   font-family: 'Open Sans', sans-serif;

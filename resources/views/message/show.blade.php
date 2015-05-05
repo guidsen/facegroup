@@ -31,7 +31,9 @@
                     9 hours ago
                 </div>
             </div>
-            {{$comment->getProperty('message')}}
+            <div class="content">
+                {{$comment->getProperty('message')}}
+            </div>
             Likes: {{$comment->getProperty('like_count')}}
         </div>
     @endforeach
